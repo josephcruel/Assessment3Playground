@@ -98,3 +98,16 @@ function objfunc(obj) {
 console.log(objfunc({"name": "Dom"}))
 
 
+function reversedNum(num) {
+    return (
+      parseFloat(
+        num
+          .toString()
+          .split('')
+          .reverse()
+          .join('')
+      ) * Math.sign(num)
+    )                 
+  }
+
+
